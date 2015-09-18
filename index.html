@@ -1,0 +1,18 @@
+
+<html ng-app="colorApp">
+  <head>
+    <meta name="author" content="Tomasz Jezierski"/>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body ng-controller="colorCtrl">
+    <div id="main">
+      <h2>Input color</h2>
+      <input placeholder="Type color here" ng-model="color"/>
+      <button ng-click="getColor(color)">OK</button>
+      <div style="background:{{outputColor}}" class="box"></div>
+      <div ng-show="show" class="rgb">rgb({{R}}, {{G}}, {{B}})</div>
+    </div>
+    <script src="angular.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
